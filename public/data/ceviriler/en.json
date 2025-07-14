@@ -1,0 +1,111 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "facilities": "Facilities",
+    "meals": "Meals",
+    "menu": "Menu",
+    "organization": "Events",
+    "contact": "Contact"
+  },
+  "about": {
+    "title": "About Us",
+    "description": "As Alanya Municipality, we are proud to offer our Social Facilities to meet the social, cultural,\nand recreational needs of our residents and guests with modern solutions.\n\nLocated amidst natural beauty, our facilities provide opportunities for quality time and stand out\nwith their family-friendly structure.\n\nWe prioritize an environmentally conscious, sustainable, and accessible service approach in our facilities;\nand we aim to create spaces where everyone can benefit equally, in line with the principles of social municipalism.\n\nOur guests can relax at our open-air cafés, spend safe time in children's play areas,\nand participate in cultural activities in event areas.\n\nWith our network of social facilities spread across every neighborhood of Alanya,\nwe aim to enhance the quality of life for citizens in both urban and rural areas.\n\nWith our friendly staff and continuously updated service approach,\nwe are honored to welcome you to our social facilities.\n\nWe work for a more livable Alanya and continuously serve for the satisfaction of our valued citizens."
+  },
+  "facilities": {
+    "1": {
+      "name": "Iskele Tea Garden",
+      "description": "Our social facility, located by the seaside with the peaceful sound of the sea and unique views, is perfect for families to spend quality time together. With its spacious open areas, children's playground, and modern amenities, it's ideal for both relaxation and entertainment. You can create unforgettable memories with your loved ones while watching the sunset, escape from the city's chaos, and experience tranquility in nature. We also cater to your taste buds with delicious food and beverage options. We are delighted to host you during your special moments."
+    },
+    "2": {
+      "name": "Haci Karanfil Mansion",
+      "description": "Haci Karanfil Mansion is an old mansion unique to Alanya, carefully restored while preserving its historical texture. This special venue, offering its guests a sense of time travel with its traditional architecture and nostalgic atmosphere, is also a cultural stop where you can taste delicious local dishes. While every corner of the mansion carries traces of the past with its stone walls, wooden details, and peaceful courtyard, each plate served reflects the finest examples of Alanya cuisine."
+    },
+    "3": {
+      "name": "Tevfik Hoca Alanya House",
+      "description": "Tevfik Hoca Alanya House is a social facility located opposite the unique view of the Red Tower, one of Alanya's symbols, offering both historical and natural beauty. Our guests can feel Alanya's historical texture while resting in the shadow of this historic building. It's an ideal venue for families with its spacious seating areas, children's playground, and various refreshment options. You can enjoy pleasant moments with your loved ones under the lights of the Red Tower at sunset."
+    },
+    "4": {
+      "name": "Municipality Cafe",
+      "description": "Municipality Cafe is a social facility that stands out with its modern architecture and extensive green areas. We provide a family-friendly environment with various activity areas, children's playgrounds, and relaxation areas for our guests. Additionally, we contribute to Alanya's social life with cultural events and concerts organized at our facility. We are happy to host both local and foreign guests."
+    },
+    "5": {
+      "name": "Culinary Culture House",
+      "description": "The Culinary Culture House is a social facility established to introduce Alanya's rich culinary culture. This special venue, offering our guests the opportunity to experience local and traditional flavors, also hosts various cooking workshops and events. With its spacious kitchen areas and experienced chefs, the Culinary Culture House aims to provide an unforgettable gastronomic experience to both local and foreign guests."
+    },
+    "details": "Details"
+  },
+  "organization": {
+    "title": "Events & Organization",
+    "venues": {
+      "1": {
+        "name": "Esgilik Wedding Hall",
+        "description": "Ideal venue for magnificent weddings with large capacity."
+      },
+      "2": {
+        "name": "Drivers' Association Wedding Hall",
+        "description": "An elegant venue surrounded by nature."
+      },
+      "3": {
+        "name": "Ciplakli Wedding Hall",
+        "description": "Easy access wedding hall in the city center."
+      },
+      "4": {
+        "name": "Konakli Wedding Hall",
+        "description": "Hall with sea view and spacious atmosphere."
+      },
+      "5": {
+        "name": "Demirtas Wedding Hall",
+        "description": "Perfect option for outdoor weddings."
+      },
+      "6": {
+        "name": "Camlica Wedding Hall",
+        "description": "Wedding hall that makes a difference with modern architecture."
+      },
+      "7": {
+        "name": "Incekum Wedding Hall",
+        "description": "Prestigious venue for special events."
+      },
+      "8": {
+        "name": "Kestel Wedding Hall",
+        "description": "Multi-purpose hall suitable for all kinds of events."
+      },
+      "9": {
+        "name": "Guney Wedding Hall",
+        "description": "Wedding hall with modern and elegant design."
+      },
+      "10": {
+        "name": "Cikcilli Wedding Hall",
+        "description": "Spacious and comfortable wedding hall."
+      },
+      "11": {
+        "name": "Municipality Marriage Hall",
+        "description": "Hall designed for special wedding ceremonies."
+      }
+    },
+    "details": "Details",
+    "viewDetails": "View Details"
+  },
+  "meals": {
+    "title": "Our Local Flavors",
+    "description": "Flavors reflecting Alanya's unique culinary culture"
+  },
+  "menu": {
+    "title": "Our Menus",
+    "viewMenu": "View Menu"
+  },
+  "contact": {
+    "title": "Contact",
+    "address": "Alanya Municipality, Antalya",
+    "phone": "444 82 07 - Solution Center",
+    "email": "info@alanya.bel.tr",
+    "followUs": "Follow Us",
+    "location": "Location: Google Maps"
+  },
+  "home": {
+    "slider": {
+      "prev": "Previous",
+      "next": "Next"
+    }
+  }
+}
