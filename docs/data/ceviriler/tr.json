@@ -1,0 +1,46 @@
+{
+  "navbar": {
+    "home": "Anasayfa",
+    "about": "Hakkımızda",
+    "facilities": "Tesisler",
+    "meals": "Yemekler",
+    "menu": "Menü",
+    "organization": "Davet & Organizasyon",
+    "contact": "İletişim"
+  },
+  "about": {
+    "title": "Hakkımızda",
+    "description": "Alanya Belediyesi olarak, kent sakinlerinin ve misafirlerimizin sosyal, kültürel ve dinlence ihtiyaçlarına\nmodern çözümler sunmak amacıyla Sosyal Tesislerimizi hizmete sunmaktan büyük mutluluk duyuyoruz.\n\nDoğal güzelliklerle iç içe konumlandırılmış bu tesislerimiz, vatandaşlarımıza kaliteli zaman geçirme imkânı sunarken,\naile dostu yapısıyla da ön plana çıkmaktadır.\n\nTesislerimizde çevreye duyarlı, sürdürülebilir ve erişilebilir hizmet anlayışı ön planda tutulmakta;\nsosyal belediyecilik ilkeleri doğrultusunda herkesin eşit faydalanabileceği alanlar oluşturulmaktadır.\n\nMisafirlerimiz açık hava kafeteryalarımızda dinlenebilir, çocuk oyun alanlarında güvenli şekilde vakit geçirebilir,\netkinlik alanlarında ise kültürel faaliyetlere katılabilirler.\n\nAlanya'nın her mahallesine yayılmış olan sosyal tesis ağımız ile hem şehir merkezinde hem de kırsal\nbölgelerde yaşayan vatandaşlarımızın yaşam kalitesini artırmayı hedefliyoruz.\n\nGüler yüzlü personelimiz ve sürekli yenilenen hizmet anlayışımızla, sizleri sosyal tesislerimizde ağırlamaktan onur duyarız.\n\nDaha yaşanabilir bir Alanya için çalışıyor, siz değerli halkımızın memnuniyeti için durmaksızın hizmet ediyoruz."
+  },
+  "facilities": {
+     "1": {
+    "name": "İskele Çay Bahçesi",
+    "description": "Denizin huzur veren sesi ve eşsiz manzarasıyla, ailece keyifli zaman geçirebileceğiniz sosyal tesisimiz, sahil kenarında yer almaktadır. Geniş açık alanları, çocuk oyun parkı ve modern imkanlarıyla hem dinlenmek hem de eğlenmek için ideal bir mekandır. Gün batımını izlerken sevdiklerinizle unutulmaz anılar biriktirebilir, şehrin karmaşasından uzaklaşıp doğayla iç içe huzuru yaşayabilirsiniz. Lezzetli yiyecek ve içecek seçeneklerimizle de damak tadınıza hitap ediyoruz. Sizi en özel anlarınızda ağırlamaktan mutluluk duyarız."
+    },
+     "2": {
+    "name": "Hacı Karanfil Konağı",
+    "description": "Hacı Karanfil Konağı, tarihi dokusunu koruyarak özenle restore edilmiş Alanya’ya özgü eski bir konaktır. Geleneksel mimarisi ve nostaljik atmosferiyle misafirlerine zamanda yolculuk hissi sunan bu özel mekan, aynı zamanda lezzetli yöresel yemeklerin de tadına varabileceğiniz bir kültür durağıdır. Taş duvarları, ahşap detayları ve sakin avlusu ile konağın her köşesi geçmişin izlerini taşırken, sofralara gelen her tabak Alanya mutfağının en güzel örneklerini yansıtır."
+  },
+        "3": {      
+    "name": "Tevfik Hoca Alanya Evi",
+    "description": "Tevfik Hoca Alanya Evi, Alanya’nın simgelerinden biri olan Kızılkule’nin eşsiz manzarasına karşı konumlanmış, tarihi ve doğal güzellikleri bir arada sunan bir sosyal tesistir. Misafirlerimiz, bu tarihi yapının gölgesinde dinlenirken, Alanya’nın tarihi dokusunu hissedebilirler. Geniş oturma alanları, çocuk oyun parkı ve çeşitli ikram seçenekleri ile aileler için ideal bir mekandır. Gün batımında Kızılkule’nin ışıkları altında sevdiklerinizle keyifli anlar yaşayabilirsiniz."
+  },
+        "4": {
+    "name": "Belediye Kafe",
+    "description": "Belediye Kafe, modern mimarisi ve geniş yeşil alanlarıyla dikkat çeken bir sosyal tesistir. Misafirlerimize sunduğumuz çeşitli etkinlik alanları, çocuk oyun parkları ve dinlenme alanları ile aile dostu bir ortam sağlamaktadır. Ayrıca, tesisimizde düzenlenen kültürel etkinlikler ve konserler ile Alanya’nın sosyal hayatına katkıda bulunuyoruz. Hem yerli hem de yabancı misafirlerimizi ağırlamaktan mutluluk duyuyoruz."
+  },
+        "5": {
+    "name": "Mutfak Kültür Evi",
+    "description": "Mutfak Kültür Evi, Alanya’nın zengin mutfak kültürünü tanıtmak amacıyla kurulmuş bir sosyal tesistir. Misafirlerimize, yerel ve geleneksel lezzetleri deneyimleme fırsatı sunan bu özel mekan, aynı zamanda çeşitli yemek atölyeleri ve etkinliklere ev sahipliği yapmaktadır. Geniş mutfak alanları ve deneyimli şefleri ile Mutfak Kültür Evi, hem yerli hem de yabancı misafirlerimize unutulmaz bir gastronomi deneyimi yaşatmayı hedeflemektedir."
+    },
+    "details": "Detaylar"
+  },
+  "meals": {
+    "title": "Yöresel Yemekler",
+    "description": "Alanya'nın eşsiz mutfak kültürünü yansıtan lezzetler"
+  },
+  "menu": {
+    "title": "Menülerimiz",
+    "viewMenu": "Menüyü Görüntüle"
+  }
+}

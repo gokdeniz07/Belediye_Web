@@ -97,17 +97,12 @@ const Organization = () => {
                 className="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-60 group-hover:opacity-40 transition-opacity"></div>
-            </div>
-            
-            <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+            </div>              <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
               <h3 className="text-2xl font-bold mb-2 transform group-hover:-translate-y-1 transition-transform">
                 {item.name}
               </h3>
-              <p className="text-gray-200 transform group-hover:-translate-y-1 transition-transform delay-75">
-                {item.description}
-              </p>
               <div className="mt-4 flex items-center gap-2 text-white/90 transform group-hover:-translate-y-1 transition-transform delay-100">
-                <span className="text-sm font-medium">{t("organization.viewDetails")}</span>
+                <span className="text-sm font-medium">Detaylar</span>
                 <svg 
                   className="w-5 h-5 transition-transform group-hover:translate-x-1" 
                   fill="none" 

@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "Eşgilik Düğün Salonu",
+    "description": "Geniş kapasitesiyle muhteşem düğünler için ideal.",
+    "image": "/photo/org1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Şoförler Odası Düğün Salonu",
+    "description": "Doğayla iç içe şık bir mekan.",
+    "image": "/photo/org2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Çıplaklı Düğün Salonu",
+    "description": "Şehir merkezinde kolay ulaşım imkanı.",
+    "image": "/photo/org3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Konaklı Düğün Salonu",
+    "description": "Deniz manzaralı, ferah bir atmosfer.",
+    "image": "/photo/org4.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Demirtaş Düğün Salonu",
+    "description": "Kır düğünleri için mükemmel bir seçenek.",
+    "image": "/photo/org5.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Çamlıca Düğün Salonu",
+    "description": "Modern mimarisiyle fark yaratan salon.",
+    "image": "/photo/org6.jpg"
+  },
+  {
+    "id": 7,
+    "name": "İncekum Düğün Salonu",
+    "description": "Özel organizasyonlar için prestijli bir alan.",
+    "image": "/photo/org7.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Kestel Düğün Salonu",
+    "description": "Farklı konseptlerde etkinlikler için uygun alan.",
+    "image": "/photo/org8.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Güney Düğün Salonu",
+    "description": "Farklı konseptlerde etkinlikler için uygun alan.",
+    "image": "/photo/org9.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Cikcilli Düğün Salonu",
+    "description": "Farklı konseptlerde etkinlikler için uygun alan.",
+    "image": "/photo/org10.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Belediye Nikah Salonu",
+    "description": "Farklı konseptlerde etkinlikler için uygun alan.",
+    "image": "/photo/org11.jpg"
+  }
+]
