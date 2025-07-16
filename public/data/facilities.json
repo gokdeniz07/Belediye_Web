@@ -4,30 +4,35 @@
     "title": "Tesis 1",
     "description": "Denize sıfır konumda aile dostu sosyal tesis.",
     "image": "/photo/tesis1.jpg"
+    "menu_pdf": "/data/menu1.pdf"
   },
   {
     "id": 2,
     "title": "Tesis 2",
     "description": "Geniş bahçeli, doğal ortamıyla huzur verici tesis.",
     "image": "/photo/tesis2.jpg"
+    "menu_pdf": "/data/menu2.pdf"
   },
   {
     "id": 3,
     "title": "Tesis 3",
     "description": "Manzaralı terasıyla unutulmaz akşamlar için ideal.",
     "image": "/photo/tesis3.jpg"
+    "menu_pdf": "/data/menu3.pdf"
   },
   {
     "id": 4,
     "title": "Tesis 4",
     "description": "Çocuk oyun alanı ile ailelerin vazgeçilmezi.",
     "image": "/photo/tesis4.jpg"
+    "menu_pdf": "/data/menu4.pdf"
   },
   {
     "id": 5,
     "title": "Tesis 5",
     "description": "Modern tasarımıyla göz alıcı sosyal alan.",
     "image": "/photo/tesis5.jpg"
+    "menu_pdf": "/data/menu5.pdf"
   },
   {
     "id": 6,
