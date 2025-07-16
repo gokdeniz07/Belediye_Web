@@ -16,11 +16,8 @@ const Yemekler = () => {
   
   return (
     <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-gray-50">
-      <h1 className="text-4xl font-bold mb-12 text-center text-[#003B59] relative">
-        <span className="relative inline-block">
-          {t('meals.title')}
-          <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1/2 h-1 bg-[#003B59] rounded-full"></div>
-        </span>
+      <h1 className="text-4xl font-bold mb-12 text-center text-[#003B59]">
+        {t('meals.title')}
       </h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
@@ -65,12 +62,13 @@ const Yemekler = () => {
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
               </svg>
-            </button>
-            <img
-              src={selectedImage.image}
-              alt={selectedImage.name}
-              className="w-full h-[80vh] object-contain bg-black"
-            />
+            </button>              <div className="bg-gradient-to-b from-gray-50 to-white w-full h-[80vh] flex items-center justify-center">
+                <img
+                  src={selectedImage.image}
+                  alt={selectedImage.name}
+                  className="w-full h-full object-contain"
+                />
+              </div>
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent">
               <h3 className="text-2xl font-bold text-white p-6">
                 {selectedImage.name}

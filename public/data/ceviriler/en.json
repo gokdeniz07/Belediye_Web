@@ -10,7 +10,12 @@
   },
   "about": {
     "title": "About Us",
-    "description": "As Alanya Municipality, we are proud to offer our Social Facilities to meet the social, cultural,\nand recreational needs of our residents and guests with modern solutions.\n\nLocated amidst natural beauty, our facilities provide opportunities for quality time and stand out\nwith their family-friendly structure.\n\nWe prioritize an environmentally conscious, sustainable, and accessible service approach in our facilities;\nand we aim to create spaces where everyone can benefit equally, in line with the principles of social municipalism.\n\nOur guests can relax at our open-air cafés, spend safe time in children's play areas,\nand participate in cultural activities in event areas.\n\nWith our network of social facilities spread across every neighborhood of Alanya,\nwe aim to enhance the quality of life for citizens in both urban and rural areas.\n\nWith our friendly staff and continuously updated service approach,\nwe are honored to welcome you to our social facilities.\n\nWe work for a more livable Alanya and continuously serve for the satisfaction of our valued citizens."
+    "mission_title": "Our Mission",
+    "vision_title": "Our Vision",
+    "values_title": "Our Values",
+    "mission": "[You can write your mission here]",
+    "vision": "[You can write your vision here]",
+    "values": "[You can write your values here]"
   },
   "facilities": {
     "title": "Facilities",

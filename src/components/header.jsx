@@ -30,19 +30,24 @@ const Header = () => {
             </div>
 
             {/* Logo */}
-            <div className="mx-4 flex-shrink-0">
-              <img
-                src="/photo/logo.jpg"
-                alt="Logo"
-                className="h-20 w-20 object-contain bg-white p-1 rounded-[50%] border border-white shadow-md"
-              />
+            <div className="mx-4 flex-shrink-0 relative group">
+              <div className="absolute inset-0 bg-gradient-to-r from-yellow-300/20 to-yellow-500/20 rounded-full blur-xl group-hover:blur-2xl transition-all duration-300 opacity-0 group-hover:opacity-100"></div>
+              <div className="relative">
+                <div className="absolute inset-0 bg-white rounded-full shadow-lg transform group-hover:scale-105 transition-transform duration-300"></div>
+                <img
+                  src="/photo/logo.jpg"
+                  alt="Logo"
+                  className="h-20 w-20 object-contain relative z-10 p-1 rounded-full transform group-hover:scale-105 transition-all duration-300"
+                />
+                <div className="absolute inset-0 rounded-full border-2 border-yellow-300/30 group-hover:border-yellow-300/50 transition-colors duration-300"></div>
+              </div>
             </div>
 
             {/* Sağ Menü */}
             <div className="flex items-center space-x-8 min-w-[400px] justify-end">
               <Link to="/menu" className="text-lg font-semibold whitespace-nowrap w-24 text-center hover:text-yellow-300 transition-colors">{t("navbar.menu")}</Link>
-              <Link to="/organization" className="text-lg font-semibold whitespace-nowrap w-32 text-center hover:text-yellow-300 transition-colors">{t("navbar.organization")}</Link>
-              <Link to="/contact" className="text-lg font-semibold whitespace-nowrap w-24 text-center hover:text-yellow-300 transition-colors">{t("navbar.contact")}</Link>
+              <Link to="/organization" className="text-lg font-semibold whitespace-nowrap w-48 text-center hover:text-yellow-300 transition-colors">{t("navbar.organization")}</Link>
+              <Link to="/contact" className="text-lg font-semibold whitespace-nowrap w-32 text-center hover:text-yellow-300 transition-colors">{t("navbar.contact")}</Link>
             </div>
           </nav>
 
