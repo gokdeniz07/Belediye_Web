@@ -18,11 +18,11 @@ function Home() {
 
   useEffect(() => {
     const timer = setInterval(() => {
-      nextSlide();
-    }, 5000);
+      setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
+    }, 3000);
 
     return () => clearInterval(timer);
-  }, [currentSlide]);
+  }, []);
 
   const nextSlide = () => {
     if (!isTransitioning) {
