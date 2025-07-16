@@ -1,43 +1,195 @@
 [
   {
     "id": 1,
-    "title": "Tesis 1",
+    "title": "İskele Çay Bahçesi",
     "description": "Denize sıfır konumda aile dostu sosyal tesis.",
-    "image": "/photo/tesis1.jpg"
-    "menu_pdf": "/data/menu1.pdf"
+    "image": "/photo/tesis1.jpg",
+    "menu_pdf": "/data/menu1.pdf",
+    "gallery": [
+      "/photo/tesis1.jpg",
+      "/photo/slider1-1.jpg",
+      "/photo/slider1-2.jpg",
+      "/photo/slider1-3.jpg"
+    ],
+    "location": {
+      "latitude": 36.5454,
+      "longitude": 31.9956,
+      "address": "İskele Mah. Alanya/Antalya",
+      "mapUrl": "https://maps.app.goo.gl/PHZm26pDAgHdbeQ87"
+    },
+    "features": [
+      "Deniz Manzarası",
+      "Açık Alan",
+      "Çocuk Oyun Alanı",
+      "Ücretsiz Wi-Fi"
+    ],
+    "workingHours": {
+      "weekday": "08:00 - 23:00",
+      "weekend": "08:00 - 00:00"
+    },
+    "contact": {
+      "phone": "+90 242 XXX XX XX",
+      "email": "iskele@alanya.bel.tr"
+    }
   },
   {
     "id": 2,
-    "title": "Tesis 2",
+    "title": "Hacı Karanfil Kafe",
     "description": "Geniş bahçeli, doğal ortamıyla huzur verici tesis.",
-    "image": "/photo/tesis2.jpg"
-    "menu_pdf": "/data/menu2.pdf"
+    "image": "/photo/tesis2.jpg",
+    "menu_pdf": "/data/menu2.pdf",
+    "gallery": [
+      "/photo/tesis2.jpg",
+      "/photo/slider2-1.jpg",
+      "/photo/slider2-2.jpg",
+      "/photo/slider2-3.jpg"
+    ],
+    "location": {
+      "latitude": 36.5445,
+      "longitude": 31.9945,
+      "address": "Merkez Mah. Alanya/Antalya",
+      "mapUrl": "https://maps.app.goo.gl/example2"
+    },
+    "features": [
+      "Geniş Bahçe",
+      "Otopark",
+      "Çocuk Oyun Alanı",
+      "Ücretsiz Wi-Fi"
+    ],
+    "workingHours": {
+      "weekday": "09:00 - 22:00",
+      "weekend": "09:00 - 23:00"
+    },
+    "contact": {
+      "phone": "+90 242 XXX XX XX",
+      "email": "karanfil@alanya.bel.tr"
+    }
   },
   {
     "id": 3,
-    "title": "Tesis 3",
+    "title": "Tevfik Hoca Alanya Evi",
     "description": "Manzaralı terasıyla unutulmaz akşamlar için ideal.",
-    "image": "/photo/tesis3.jpg"
-    "menu_pdf": "/data/menu3.pdf"
+    "image": "/photo/tesis3.jpg",
+    "menu_pdf": "/data/menu3.pdf",
+    "gallery": [
+      "/photo/tesis3.jpg",
+      "/photo/slider3-1.jpg",
+      "/photo/slider3-2.jpg",
+      "/photo/slider3-3.jpg"
+    ],
+    "location": {
+      "latitude": 36.5442,
+      "longitude": 31.9948,
+      "address": "Kale Mah. Alanya/Antalya",
+      "mapUrl": "https://maps.app.goo.gl/example3"
+    },
+    "features": [
+      "Teras",
+      "Manzara",
+      "Tarihi Atmosfer",
+      "Ücretsiz Wi-Fi"
+    ],
+    "workingHours": {
+      "weekday": "10:00 - 22:00",
+      "weekend": "10:00 - 23:00"
+    },
+    "contact": {
+      "phone": "+90 242 XXX XX XX",
+      "email": "tevfikhoca@alanya.bel.tr"
+    }
   },
   {
     "id": 4,
-    "title": "Tesis 4",
+    "title": "Belediye Kafe",
     "description": "Çocuk oyun alanı ile ailelerin vazgeçilmezi.",
-    "image": "/photo/tesis4.jpg"
-    "menu_pdf": "/data/menu4.pdf"
+    "image": "/photo/tesis4.jpg",
+    "menu_pdf": "/data/menu4.pdf",
+    "gallery": [
+      "/photo/tesis4.jpg",
+      "/photo/slider4.jpg"
+    ],
+    "location": {
+      "latitude": 36.5449,
+      "longitude": 31.9947,
+      "address": "Belediye Mah. Alanya/Antalya",
+      "mapUrl": "https://maps.app.goo.gl/example4"
+    },
+    "features": [
+      "Çocuk Oyun Alanı",
+      "Otopark",
+      "Engelli Erişimi",
+      "Ücretsiz Wi-Fi"
+    ],
+    "workingHours": {
+      "weekday": "08:00 - 22:00",
+      "weekend": "08:00 - 23:00"
+    },
+    "contact": {
+      "phone": "+90 242 XXX XX XX",
+      "email": "belediyekafe@alanya.bel.tr"
+    }
   },
   {
     "id": 5,
-    "title": "Tesis 5",
+    "title": "Mutfak Kültür Evi",
     "description": "Modern tasarımıyla göz alıcı sosyal alan.",
-    "image": "/photo/tesis5.jpg"
-    "menu_pdf": "/data/menu5.pdf"
+    "image": "/photo/tesis5.jpg",
+    "menu_pdf": "/data/menu5.pdf",
+    "gallery": [
+      "/photo/tesis5.jpg",
+      "/photo/slider5-1.jpg",
+      "/photo/slider5-2.jpg",
+      "/photo/slider5-3.jpg"
+    ],
+    "location": {
+      "latitude": 36.5447,
+      "longitude": 31.9944,
+      "address": "Kültür Mah. Alanya/Antalya",
+      "mapUrl": "https://maps.app.goo.gl/example5"
+    },
+    "features": [
+      "Modern Tasarım",
+      "Etkinlik Alanı",
+      "Workshop İmkanı",
+      "Ücretsiz Wi-Fi"
+    ],
+    "workingHours": {
+      "weekday": "09:00 - 21:00",
+      "weekend": "10:00 - 22:00"
+    },
+    "contact": {
+      "phone": "+90 242 XXX XX XX",
+      "email": "mutfakkultur@alanya.bel.tr"
+    }
   },
   {
     "id": 6,
     "title": "Tesis 6",
     "description": "Şehir merkezine yakın, ulaşımı kolay konum.",
-    "image": "/photo/tesis6.jpg"
+    "image": "/photo/tesis6.jpg",
+    "gallery": [
+      "/photo/tesis6.jpg",
+      "/photo/slider6.jpg"
+    ],
+    "location": {
+      "latitude": 36.5451,
+      "longitude": 31.9942,
+      "address": "Merkez Mah. Alanya/Antalya",
+      "mapUrl": "https://maps.app.goo.gl/example6"
+    },
+    "features": [
+      "Merkezi Konum",
+      "Kolay Ulaşım",
+      "Engelli Erişimi",
+      "Ücretsiz Wi-Fi"
+    ],
+    "workingHours": {
+      "weekday": "08:00 - 22:00",
+      "weekend": "08:00 - 22:00"
+    },
+    "contact": {
+      "phone": "+90 242 XXX XX XX",
+      "email": "tesis6@alanya.bel.tr"
+    }
   }
 ]

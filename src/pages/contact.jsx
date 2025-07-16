@@ -1,42 +1,44 @@
 import React from "react";
 import {
-  FaMapMarkerAlt,
-  FaInstagram,
-  FaYoutube,
-  FaTwitter,
-  FaFacebook,
-  FaPhone,
-} from "react-icons/fa";
+  LocationOn,
+  Instagram,
+  YouTube,
+  Twitter,
+  Facebook,
+  Phone,
+  Email,
+  AccessTime,
+} from "@mui/icons-material";
 
 const Contact = () => {
   const items = [
     {
-      icon: <FaMapMarkerAlt className="text-lg text-gray-700" />,
+      icon: <LocationOn sx={{ fontSize: 24, color: '#374151' }} />,
       label: "Konum: Google Haritalar",
       link: "https://maps.app.goo.gl/PHZm26pDAgHdbeQ87",
     },
     {
-      icon: <FaInstagram className="text-lg text-pink-500" />,
+      icon: <Instagram sx={{ fontSize: 24, color: '#ec4899' }} />,
       label: "instagram.com/alanyabld",
       link: "https://www.instagram.com/alanyabld",
     },
     {
-      icon: <FaYoutube className="text-lg text-red-500" />,
+      icon: <YouTube sx={{ fontSize: 24, color: '#ef4444' }} />,
       label: "YouTube Kanalı",
       link: "https://www.youtube.com/channel/UC9s4YdggnW2X-UYo1U0qgvg",
     },
     {
-      icon: <FaTwitter className="text-lg text-blue-400" />,
+      icon: <Twitter sx={{ fontSize: 24, color: '#60a5fa' }} />,
       label: "x.com/alanyabld",
       link: "https://x.com/alanyabld",
     },
     {
-      icon: <FaFacebook className="text-lg text-blue-600" />,
+      icon: <Facebook sx={{ fontSize: 24, color: '#2563eb' }} />,
       label: "facebook.com/alanyabelediyesi",
       link: "https://www.facebook.com/alanyabelediyesi",
     },
     {
-      icon: <FaPhone className="text-lg text-green-600" />,
+      icon: <Phone sx={{ fontSize: 24, color: '#16a34a' }} />,
       label: "444 82 07 - Çözüm Masası",
       link: "tel:4448207",
     },

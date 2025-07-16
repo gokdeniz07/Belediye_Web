@@ -1,19 +1,19 @@
 
 import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { ArrowBigLeft, ArrowBigRight } from "lucide-react";
+import { KeyboardArrowLeft, KeyboardArrowRight } from "@mui/icons-material";
 
 function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
 
   const slides = [
-    { image: "/photo/slider1.jpg", title: "Sosyal Tesislerimiz" },
-    { image: "/photo/slider2.jpg", title: "Modern Mekanlar" },
-    { image: "/photo/slider3.jpg", title: "Kaliteli Hizmet" },
-    { image: "/photo/slider4.jpg", title: "Eşsiz Lezzetler" },
-    { image: "/photo/slider5.jpg", title: "Özel Etkinlikler" },
-    { image: "/photo/slider6.jpg", title: "Unutulmaz Anlar" }
+    { image: "/photo/slider1.jpg" },
+    { image: "/photo/slider2.jpg" },
+    { image: "/photo/slider3.jpg" },
+    { image: "/photo/slider4.jpg" },
+    { image: "/photo/slider5.jpg" },
+    { image: "/photo/slider6.jpg" }
   ];
 
   useEffect(() => {
@@ -89,13 +89,13 @@ function Home() {
           onClick={prevSlide}
           className="absolute left-6 top-1/2 -translate-y-1/2 bg-white/10 text-white p-4 rounded-2xl backdrop-blur-md transition-all opacity-0 group-hover:opacity-100 hover:scale-110 hover:bg-[#003B59]/70 hover:shadow-lg transform -translate-x-2 group-hover:translate-x-0"
         >
-          <ArrowBigLeft className="w-8 h-8" />
+          <KeyboardArrowLeft sx={{ fontSize: 40 }} />
         </button>
         <button
           onClick={nextSlide}
           className="absolute right-6 top-1/2 -translate-y-1/2 bg-white/10 text-white p-4 rounded-2xl backdrop-blur-md transition-all opacity-0 group-hover:opacity-100 hover:scale-110 hover:bg-[#003B59]/70 hover:shadow-lg transform translate-x-2 group-hover:translate-x-0"
         >
-          <ArrowBigRight className="w-8 h-8" />
+          <KeyboardArrowRight sx={{ fontSize: 40 }} />
         </button>
 
         {/* Indicators */}

@@ -1,6 +1,6 @@
 import React from "react";
-import { FaFilePdf } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
+import { PictureAsPdf, MenuBook } from "@mui/icons-material";
 
 const menus = [
   { title: "İskele Çay Bahçesi", file: "/data/menu1.pdf" },
@@ -35,7 +35,7 @@ const Menu = () => {
                 <p className="mt-2 text-sm text-gray-500">Menüyü görüntülemek için tıklayın</p>
               </div>
               <div className="ml-4 transform transition-transform duration-300 group-hover:scale-110">
-                <FaFilePdf className="text-3xl text-red-600" />
+                <PictureAsPdf sx={{ fontSize: 36, color: '#dc2626' }} />
               </div>
             </div>
             <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-red-600 to-red-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
