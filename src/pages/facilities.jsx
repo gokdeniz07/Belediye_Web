@@ -30,11 +30,8 @@ const Facilities = () => {
 
   return (
     <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-gray-50">
-      <h1 className="text-4xl font-bold mb-12 text-center text-[#003B59] relative">
-        <span className="relative inline-block">
-          {t("facilities.title")}
-          <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1/2 h-1 bg-[#003B59] rounded-full"></div>
-        </span>
+      <h1 className="text-4xl font-bold mb-12 text-center text-[#003B59]">
+        {t("facilities.title")}
       </h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

@@ -43,32 +43,47 @@ const Contact = () => {
   ];
 
   return (
-    <div className="bg-gray-50 min-h-screen py-10 px-4">
-      <h1 className="text-3xl font-bold text-center mb-10 text-[#003B59]">İletişim</h1>
+    <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-gray-50 min-h-screen">
+      <h1 className="text-4xl font-bold mb-12 text-center text-[#003B59] relative">
+        <span className="relative inline-block">
+          İletişim
+          <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1/2 h-1 bg-[#003B59] rounded-full"></div>
+        </span>
+      </h1>
 
-      <div className="max-w-3xl mx-auto space-y-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
         {items.map((item, index) => (
           <a
             key={index}
             href={item.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-between bg-white shadow-md rounded-lg px-6 py-4 hover:shadow-lg transition"
+            className="group relative overflow-hidden rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 p-6"
           >
-            <span className="flex items-center gap-3">
-              {item.icon}
-              <span className="text-gray-800 text-sm sm:text-base">{item.label}</span>
-            </span>
-            <span className="text-red-600">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                <path d="M13 5v6h6v2h-8V5h2zm1 11h-4v2h4v-2z" />
-              </svg>
-            </span>
+            <div className="flex items-center gap-4">
+              <div className="p-3 rounded-full bg-gray-50 group-hover:bg-gray-100 transition-colors">
+                {React.cloneElement(item.icon, { 
+                  className: `text-2xl ${item.icon.props.className}` 
+                })}
+              </div>
+              <div className="flex-1">
+                <span className="block text-lg font-medium text-gray-900 group-hover:text-[#003B59] transition-colors">
+                  {item.label}
+                </span>
+              </div>
+              <div className="transform transition-transform duration-300 group-hover:translate-x-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6 text-gray-400 group-hover:text-[#003B59]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
+            </div>
+            <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-[#003B59] to-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
           </a>
         ))}
       </div>

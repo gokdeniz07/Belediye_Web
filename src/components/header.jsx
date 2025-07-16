@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { Globe } from "lucide-react"; // Globe ikonu için
+import { Globe } from "lucide-react";
+import "./header.css";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,85 +17,89 @@ const Header = () => {
 
   return (
     <header className="bg-[#003B59] text-white shadow-md">
-      <div className="max-w-screen-xl mx-auto px-4 py-3 flex items-center justify-between relative h-28">
+      <div className="max-w-screen-xl mx-auto px-4 py-3 relative h-28">
+        <div className="flex items-center justify-between h-full">
+          {/* Desktop Menü */}
+          <nav className="hidden md:flex items-center justify-between w-full">
+            {/* Sol Menü */}
+            <div className="flex items-center space-x-8 min-w-[400px]">
+              <Link to="/" className="text-lg font-semibold whitespace-nowrap w-24 text-center hover:text-yellow-300 transition-colors">{t("navbar.home")}</Link>
+              <Link to="/about" className="text-lg font-semibold whitespace-nowrap w-24 text-center hover:text-yellow-300 transition-colors">{t("navbar.about")}</Link>
+              <Link to="/facilities" className="text-lg font-semibold whitespace-nowrap w-24 text-center hover:text-yellow-300 transition-colors">{t("navbar.facilities")}</Link>
+              <Link to="/meals" className="text-lg font-semibold whitespace-nowrap w-24 text-center hover:text-yellow-300 transition-colors">{t("navbar.meals")}</Link>
+            </div>
 
-        {/* Sol Menü (Desktop) */}
-        <div className="hidden md:flex gap-12 text-[20px] font-semibold">
-          <Link to="/">{t("navbar.home")}</Link>
-          <Link to="/about">{t("navbar.about")}</Link>
-          <Link to="/facilities">{t("navbar.facilities")}</Link>
-          <Link to="/meals">{t("navbar.meals")}</Link>
-        </div>
+            {/* Logo */}
+            <div className="mx-4 flex-shrink-0">
+              <img
+                src="/photo/logo.jpg"
+                alt="Logo"
+                className="h-20 w-20 object-contain bg-white p-1 rounded-[50%] border border-white shadow-md"
+              />
+            </div>
 
-        {/* Logo */}
-        <div className="absolute left-1/2 transform -translate-x-1/2">
-          <img
-            src="/photo/logo.jpg"
-            alt="Logo"
-            className="h-20 w-auto object-contain bg-white p-1 rounded-[50%] border border-white shadow-md"
-          />
-        </div>
+            {/* Sağ Menü */}
+            <div className="flex items-center space-x-8 min-w-[400px] justify-end">
+              <Link to="/menu" className="text-lg font-semibold whitespace-nowrap w-24 text-center hover:text-yellow-300 transition-colors">{t("navbar.menu")}</Link>
+              <Link to="/organization" className="text-lg font-semibold whitespace-nowrap w-32 text-center hover:text-yellow-300 transition-colors">{t("navbar.organization")}</Link>
+              <Link to="/contact" className="text-lg font-semibold whitespace-nowrap w-24 text-center hover:text-yellow-300 transition-colors">{t("navbar.contact")}</Link>
+            </div>
+          </nav>
 
-        {/* Sağ Menü (Desktop) */}
-        <div className="hidden md:flex gap-10 text-[20px] font-semibold items-center">
-          <Link to="/menu">{t("navbar.menu")}</Link>
-          <Link to="/organization">{t("navbar.organization")}</Link>
-          <Link to="/contact">{t("navbar.contact")}</Link>
-
-          {/* Havalı Dil Seçici */}
-          <div className="relative">
+          {/* Dil Seçici - Desktop */}
+          <div className="hidden md:block relative ml-6">
             <button
               onClick={() => setLangMenuOpen(!langMenuOpen)}
-              className="flex items-center gap-2 text-[16px] font-medium hover:text-yellow-300 transition"
+              className="flex items-center gap-2 text-base font-medium hover:text-yellow-300 transition-colors"
             >
               <Globe size={20} />
-              <span className="underline">{i18n.language === 'tr' ? 'Türkçe' : 'English'}</span>
+              <span>{i18n.language === 'tr' ? 'Türkçe' : 'English'}</span>
             </button>
 
             {langMenuOpen && (
-              <div className="absolute right-0 mt-2 bg-white text-black rounded shadow-lg overflow-hidden z-50 animate-fade-in">
+              <div className="absolute right-0 mt-2 bg-white text-black rounded shadow-lg overflow-hidden z-50">
                 <button
                   onClick={() => handleLangChange("tr")}
                   className={`block w-full text-left px-4 py-2 hover:bg-gray-200 transition ${i18n.language === 'tr' ? 'bg-gray-100' : ''}`}
                 >
-                   Türkçe
+                  Türkçe
                 </button>
                 <button
                   onClick={() => handleLangChange("en")}
                   className={`block w-full text-left px-4 py-2 hover:bg-gray-200 transition ${i18n.language === 'en' ? 'bg-gray-100' : ''}`}
                 >
-                   English
+                  English
                 </button>
               </div>
             )}
           </div>
-        </div>
 
-        {/* Hamburger Icon (Mobile) */}
-        <button className="md:hidden ml-auto z-20" onClick={toggleMenu}>
-          <svg
-            className="w-7 h-7"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            {isOpen ? (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M6 18L18 6M6 6l12 12"
-              />
-            ) : (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            )}
-          </svg>
-        </button>
+          {/* Hamburger Icon (Mobile) */}
+          <button className="md:hidden z-20" onClick={toggleMenu}>
+            <svg
+              className="w-7 h-7"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              {isOpen ? (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              ) : (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              )}
+            </svg>
+          </button>
+        </div>
       </div>
 
       {/* Mobil Menü */}
