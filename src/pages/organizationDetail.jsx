@@ -18,6 +18,11 @@ const maps = {
 
 const OrganizationDetail = () => {
   const { id } = useParams();
+  const { t } = useTranslation();
+
+  const [activeImage, setActiveImage] = useState(0);
+  const [showGallery, setShowGallery] = useState(false);
+  const mapUrl = maps[id];
 
   // Görsel isimlerini burada oluşturuyoruz (varsayılan 3 görsel)
   const imageList = [
@@ -27,34 +32,103 @@ const OrganizationDetail = () => {
   ];
 
   return (
-    <div className="max-w-5xl mx-auto p-6">
-      <h1 className="text-2xl font-bold mb-4"> </h1>
-      <p className="mb-6">Etkinlik mekanı hakkında detaylı bilgiler burada gösterilecek.</p>
+    <div className="min-h-screen bg-gray-50">
+      <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
+        <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
+          {/* Ana Görsel ve Galeri */}
+          <div className="relative aspect-video">
+            <img
+              src={imageList[activeImage]}
+              alt={`Salon ${id} Ana Görsel`}
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute bottom-4 right-4 flex space-x-2">
+              {imageList.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setActiveImage(index)}
+                  className={`w-3 h-3 rounded-full ${
+                    activeImage === index ? 'bg-white' : 'bg-white/50'
+                  }`}
+                />
+              ))}
+            </div>
+          </div>
 
-      {/* Görseller */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
-        {imageList.map((src, index) => (
-          <img
-            key={index}
-            src={src}
-            alt={`Salon ${id} Görsel ${index + 1}`}
-            className="w-full h-64 object-cover rounded shadow"
-          />
-        ))}
+          <div className="p-8">
+            {/* Bilgiler */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div>
+                <h1 className="text-3xl font-bold text-[#003B59] mb-4">
+                  {`${id}. Salon`}
+                </h1>
+                <p className="text-gray-600 mb-6">
+                  Alanya Belediyesi'nin modern ve konforlu düğün salonlarından biri.
+                  Geniş kapasitesi ve merkezi konumu ile sizin için ideal mekan.
+                </p>
+                <div className="space-y-4">
+                  <div className="flex items-center text-gray-600">
+                    <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    <span>Alanya, Antalya</span>
+                  </div>
+                  <div className="flex items-center text-gray-600">
+                    <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                    </svg>
+                    <span>Kapasite: 500 Kişi</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Harita */}
+              <div className="h-[400px] rounded-lg overflow-hidden">
+                <iframe
+                  src={mapUrl}
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title={`Salon ${id} Harita`}
+                  className="w-full h-full"
+                />
+              </div>
+            </div>
+
+            {/* Özellikler */}
+            <div className="mt-8">
+              <h2 className="text-xl font-semibold text-[#003B59] mb-4">Salon Özellikleri</h2>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                {['Klima', 'Otopark', 'Ses Sistemi', 'Projeksiyon', 'Mutfak', 'Güvenlik', 'Wi-Fi', 'Vestiyer'].map((feature) => (
+                  <div key={feature} className="flex items-center">
+                    <svg className="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className="text-gray-600">{feature}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* İletişim Butonu */}
+            <div className="mt-8">
+              <button
+                onClick={() => window.location.href = '/contact'}
+                className="w-full sm:w-auto bg-[#003B59] text-white px-8 py-3 rounded-lg hover:bg-[#004466] transition-colors duration-300 flex items-center justify-center gap-2"
+              >
+                <span>Rezervasyon İçin İletişime Geçin</span>
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-
-      {/* Harita */}
-      <iframe
-        src={maps[id]}
-        width="100%"
-        height="450"
-        style={{ border: 0 }}
-        allowFullScreen=""
-        loading="lazy"
-        referrerPolicy="no-referrer-when-downgrade"
-        title={`Salon ${id} Harita`}
-        className="rounded shadow"
-      ></iframe>
     </div>
   );
 };

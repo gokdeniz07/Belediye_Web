@@ -1,48 +1,66 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { PictureAsPdf, MenuBook } from "@mui/icons-material";
-
-const menus = [
-  { title: "İskele Çay Bahçesi", file: "/data/menu1.pdf" },
-  { title: "Hacı Karanfil Kafe", file: "/data/menu2.pdf" },
-  { title: "Tevfik Hoca Alanya Evi", file: "/data/menu3.pdf" },
-  { title: "Belediye Kafe", file: "/data/menu4.pdf" },
-  { title: "Mutfak Kültür Evi", file: "/data/menu5.pdf" },
-];
+import PageLayout from "../components/pageLayout";
 
 const Menu = () => {
   const { t } = useTranslation();
-  
+
+  const menus = [
+    { id: 1, pdf: "/data/menu1.pdf", title: "Kahvaltı Menüsü", image: "/photo/menu.jpg", description: "Güne güzel bir başlangıç için kahvaltı menümüzü inceleyin." },
+    { id: 2, pdf: "/data/menu2.pdf", title: "Öğle Yemeği Menüsü", image: "/photo/menu.jpg", description: "Günün en özel öğününde sizler için hazırladığımız lezzetler." },
+    { id: 3, pdf: "/data/menu3.pdf", title: "Akşam Yemeği Menüsü", image: "/photo/menu.jpg", description: "Günü güzel bir akşam yemeği ile sonlandırın." },
+    { id: 4, pdf: "/data/menu4.pdf", title: "Özel Menü", image: "/photo/menu.jpg", description: "Özel günleriniz için hazırladığımız menüler." },
+    { id: 5, pdf: "/data/menu5.pdf", title: "İçecek Menüsü", image: "/photo/menu.jpg", description: "Yemeklerinize eşlik edecek içecekler." }
+  ];
+
   return (
-    <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-gray-50">
-      <h1 className="text-4xl font-bold mb-12 text-center text-[#003B59]">
-        {t("menu.title")}
-      </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {menus.map((menu, i) => (
-          <a
-            key={i}
-            href={menu.file}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group relative overflow-hidden rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
-          >
-            <div className="p-6 flex items-center justify-between">
-              <div className="flex-1">
-                <h3 className="text-xl font-semibold text-gray-800 group-hover:text-[#003B59] transition-colors">
-                  {menu.title}
-                </h3>
-                <p className="mt-2 text-sm text-gray-500">Menüyü görüntülemek için tıklayın</p>
+    <PageLayout>
+      <div className="mb-8">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center text-[#003B59] tracking-tight">
+          {t('menu.title')}
+        </h1>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12">
+          {menus.map((menu) => (
+            <div
+              key={menu.id}
+              onClick={() => window.open(menu.pdf, '_blank')}
+              className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 flex flex-col md:flex-row cursor-pointer transform hover:-translate-y-1"
+            >
+              <div className="md:w-1/3 relative">
+                <div className="absolute inset-0 bg-[#003B59] opacity-0 hover:opacity-20 transition-opacity duration-300" />
+                <img
+                  src={menu.image}
+                  alt={menu.title}
+                  className="w-full h-full object-cover"
+                  style={{ minHeight: "250px" }}
+                />
               </div>
-              <div className="ml-4 transform transition-transform duration-300 group-hover:scale-110">
-                <PictureAsPdf sx={{ fontSize: 36, color: '#dc2626' }} />
+              <div className="md:w-2/3 p-6 flex flex-col justify-between bg-white">
+                <div>
+                  <h3 className="text-2xl font-semibold text-[#003B59] mb-4">
+                    {menu.title}
+                  </h3>
+                  <p className="text-gray-600 mb-4">{menu.description}</p>
+                </div>
+                <div className="mt-auto">
+                  <button className="bg-[#003B59] text-white px-6 py-2 rounded-lg hover:bg-[#004466] transition-colors duration-300 inline-flex items-center gap-2">
+                    <span>Menüyü Görüntüle</span>
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
-            <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-red-600 to-red-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
-          </a>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+
+
+    </PageLayout>
   );
 };
 
