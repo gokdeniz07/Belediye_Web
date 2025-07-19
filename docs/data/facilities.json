@@ -12,11 +12,11 @@
       "/photo/slider1-3.jpg"
     ],
     "location": {
-      "latitude": 36.5454,
-      "longitude": 31.9956,
-      "address": "İskele Mah. Alanya/Antalya",
-      "mapUrl": "https://maps.app.goo.gl/PHZm26pDAgHdbeQ87"
-    },
+      "latitude": 36.5420365656347,
+      "longitude": 32.001313148207174,
+      "address": "Çarşı, İzzet Azakoğlu Cd. No:56",
+      "mapUrl": "https://www.google.com/maps/place/36.5420365656347,32.001313148207174"
+  },
     "features": [
       "Deniz Manzarası",
       "Açık Alan",
@@ -45,11 +45,11 @@
       "/photo/slider2-3.jpg"
     ],
     "location": {
-      "latitude": 36.5445,
-      "longitude": 31.9945,
-      "address": "Merkez Mah. Alanya/Antalya",
-      "mapUrl": "https://maps.app.goo.gl/example2"
-    },
+        "latitude": 36.545500,
+        "longitude": 31.996806,
+        "address": "Çarşı Mah. Rıhtım Cd. No:44",
+        "mapUrl": "https://www.google.com/maps/place/36.545500,31.996806"
+  },
     "features": [
       "Geniş Bahçe",
       "Otopark",
@@ -78,10 +78,10 @@
       "/photo/slider3-3.jpg"
     ],
     "location": {
-      "latitude": 36.5442,
-      "longitude": 31.9948,
-      "address": "Kale Mah. Alanya/Antalya",
-      "mapUrl": "https://maps.app.goo.gl/example3"
+      "latitude": 36.54871460670895,
+      "longitude": 31.996807976379053,
+      "address": "Kale Mah. Hisariçi Sk. No:2",
+      "mapUrl": "https://www.google.com/maps/place/36.54871460670895,31.996807976379053"
     },
     "features": [
       "Teras",
@@ -109,11 +109,11 @@
       "/photo/slider4.jpg"
     ],
     "location": {
-      "latitude": 36.5449,
-      "longitude": 31.9947,
-      "address": "Belediye Mah. Alanya/Antalya",
-      "mapUrl": "https://maps.app.goo.gl/example4"
-    },
+      "latitude": 36.54226407210428,
+      "longitude": 32.03620572659618,
+      "address": "Güller Pınarı Mah. Hasan Akçalıoğlu Cd., Alanya/Antalya",
+      "mapUrl": "https://www.google.com/maps/place/36.54226407210428,32.03620572659618"
+  },
     "features": [
       "Çocuk Oyun Alanı",
       "Otopark",
@@ -141,11 +141,11 @@
       "/photo/slider5-2.jpg",
       "/photo/slider5-3.jpg"
     ],
-    "location": {
-      "latitude": 36.5447,
-      "longitude": 31.9944,
-      "address": "Kültür Mah. Alanya/Antalya",
-      "mapUrl": "https://maps.app.goo.gl/example5"
+   "location": {
+      "latitude": 36.53365594325486,
+      "longitude": 31.994007877439262,
+      "address": "Mutfak Kültür Evi, Şekerhane Mah. Çevreyolu Cd. No:36, 07400 Alanya/Antalya",
+      "mapUrl": "https://www.google.com/maps/place/36.53365594325486,31.994007877439262"
     },
     "features": [
       "Modern Tasarım",
