@@ -51,5 +51,12 @@
   },
   "organization": {
     "title": "Davet & Organizasyon"
-  }
+  },
+  "loading": "Yükleniyor...",
+  "facilityNotFound": "Tesis bulunamadı",
+  "errorLoadingFacility": "Tesis detayları yüklenirken bir hata oluştu",
+  "noImage": "Görsel yok",
+  "description": "Açıklama",
+  "address": "Adres",
+  "location": "Konum"
 }

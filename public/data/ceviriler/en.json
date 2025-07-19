@@ -113,5 +113,12 @@
       "prev": "Previous",
       "next": "Next"
     }
-  }
+  },
+  "loading": "Loading...",
+  "facilityNotFound": "Facility not found",
+  "errorLoadingFacility": "Error loading facility details",
+  "noImage": "No image available",
+  "description": "Description",
+  "address": "Address",
+  "location": "Location"
 }
